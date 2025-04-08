@@ -1,0 +1,64 @@
+             
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed - Ionizer</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            padding: 15px 0;
+            margin: 0;
+        }
+        h3 {
+            margin: 0 0 10px;
+            padding: 5px 0;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            background: #f2f2f2;
+            border: 1px solid #e7e7e7;
+            border-radius: 8px;
+            padding: 12px;
+        }
+        .replacement {
+            width: 100%;
+        }
+        #footer {
+            margin: 15px 0 0 0;
+            font-size: 10px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.4.1/angular-google-maps.js" integrity="sha512-J3HYpNOlRLl6aFVuUOXMvOJ0dz5KyVD/TtMqF0Qq6SC99PBZRREjHtReMPRrIYrJtHlNLuKh5VG29mxzdFX0Kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <h2>My External Website</h2>
+        </div>
+        <div id="container">
+            <h3>Loaded from head</h3>
+            <div id="ion-embed-container"></div>
+        </div>
+        
+        <div>
+            <h3>Loaded from body</h3>
+            <script 
+                src="https://ionfiles.scribblecdn.net/scripts/ionizer-1.4.5.js" 
+                data-ion-embed-hash="eyJ1cmwiOiIvL3FhLmZhZ25lcm1hcmluaG8uZGV2L2VtYmVkX2NzP19pb25fdGFyZ2V0PWVtYmVkLTEuMCIsImlkIjoiX2lvbl9pb25pemVyXzE3NDQxNDA4Nzk2NzciLCJmdWxsU2NyZWVuIjpmYWxzZSwibGF6eUxvYWRpbmciOmZhbHNlLCJ0aXRsZSI6IkVtYmVkX1F1aXoifQ=="
+                importance="high" async>
+            </script>
+        </div>
+    <div>
+    <div id="footer">
+        <p>Powered by Ionizer</p>
+    </div>
+</body>
+</html>
